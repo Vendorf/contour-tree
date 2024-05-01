@@ -1,0 +1,51 @@
+{
+  "name": "anim-event",
+  "version": "1.0.17",
+  "title": "AnimEvent",
+  "description": "Event Manager for Animation",
+  "keywords": [
+    "animation",
+    "event",
+    "performance",
+    "throttle",
+    "debounce",
+    "requestAnimationFrame",
+    "scroll",
+    "resize",
+    "mousemove",
+    "drag"
+  ],
+  "main": "anim-event.min.js",
+  "module": "anim-event.esm.js",
+  "jsnext:main": "anim-event.esm.js",
+  "files": [
+    "anim-event?(-debug).@(min.js|esm.js)",
+    "bower.json"
+  ],
+  "devDependencies": {
+    "@babel/core": "^7.14.3",
+    "@babel/preset-env": "^7.14.2",
+    "babel-core": "^7.0.0-bridge.0",
+    "babel-loader": "^7.1.5",
+    "cross-env": "^7.0.3",
+    "pre-proc": "^1.0.2",
+    "skeleton-loader": "^2.0.0",
+    "webpack": "^4.46.0",
+    "webpack-cli": "^3.3.12"
+  },
+  "scripts": {
+    "build": "cross-env NODE_ENV=production webpack --verbose",
+    "dev": "webpack --verbose"
+  },
+  "homepage": "https://github.com/anseki/anim-event",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/anseki/anim-event.git"
+  },
+  "bugs": "https://github.com/anseki/anim-event/issues",
+  "license": "MIT",
+  "author": {
+    "name": "anseki",
+    "url": "https://github.com/anseki"
+  }
+}

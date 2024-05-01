@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Contour Tree</title>
+    <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+    <div class="container">
+        <div id="box" class="box">
+            <div id="draggable" class="dragbar"></div>
+            <div id="graph-container" class="graph-container">
+            </div>
+        </div>
+    </div>
+    <div class="radioWrapper">
+        <div>
+            <input id='straightRadio' type="radio" name="leaderLineRadio" value="0" />
+            <label for="straightRadio">Straight</label>
+        </div>
+        <div>
+            <input id="magnetRadio" type="radio" name="leaderLineRadio" value="1" checked="true"/>
+            <label for="magnetRadio">Magnet</label>
+        </div>
+        <div>
+            <input type="checkbox" id="proportionalCheckbox" name="proportionalCheckbox" checked />
+            <label for="proportionalCheckbox">Proportional</label>
+        </div>
+    </div>
+</body>
+<script src="node_modules/leader-line/leader-line.min.js"></script>
+<script type="module" src="popup.js"></script>
+</html>

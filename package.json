@@ -1,0 +1,17 @@
+{
+  "name": "vizjs_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "npx vite"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@viz-js/viz": "^3.4.0",
+    "leader-line": "^1.0.7",
+    "plain-draggable": "^2.5.14"
+  }
+}

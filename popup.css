@@ -1,0 +1,48 @@
+.container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    overflow: auto;
+    background: slategray;
+
+    display: flex;
+}
+
+.box {
+    flex: 1;
+    background-color: whitesmoke;
+    /* border: 3px solid green; */
+    
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* margin: 10px; */
+}
+
+.dragbar {
+    background-color: orangered;
+    height: 15px;
+}
+
+.graph-container{
+    /* Just sits around and holds the nodes in the dom for ease */
+}
+
+.radioWrapper {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(47, 79, 79, 0.493);
+    /* border: 10px solid darkslategray; */
+    box-shadow: 0px 6px 0px 0px rgba(47, 79, 79, 0.493);
+    border-radius: 0px 6px 0px 0px;
+    padding-top: 6px;
+    padding-right: 6px;
+
+    -webkit-user-select: none;  
+    -moz-user-select: none;    
+    -ms-user-select: none;      
+    user-select: none;
+}
