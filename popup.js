@@ -8,7 +8,7 @@ var iso_max = 1;
 const graphContainer = document.getElementById("graph-container");
 const boxDiv = document.getElementById("box");
 const leader_lines = [];
-var leader_line_type = 'magnet';
+var leader_line_type = 'straight';
 
 var proportional_render = true;
 
@@ -232,46 +232,3 @@ function render_dot(tree_dot){
 }
 
 window.render_dot = render_dot;
-
-// // Try generating
-// document.getElementById("gen_btn").onclick = () => {
-//     const dot = `digraph G {
-//         r1 [style=invis];
-//         r2 [style=invis];
-//         r3 [style=invis];
-//         r4 [style=invis];
-//         r5 [style=invis];
-//         r6 [style=invis];
-//         r7 [style=invis];
-//         a -> d;
-//         b -> c;
-//         c -> d;
-//         d -> e;
-//         e -> f;
-//         e -> g;
-//         r1 -> r2 -> r3 -> r4 -> r5 -> r6 -> r7 [style=invis];
-        
-//         {rank=same; r1; a;}
-//         {rank=same; r2; b;}
-//         {rank=same; r3; c;}
-//         {rank=same; r4; d;}
-//         {rank=same; r5; e;}
-//         {rank=same; r6; f;}
-//         {rank=same; r7; g;}
-//         }`
-    
-//     console.time("timer")
-//     instance().then(viz => 
-//         {
-//             // const svg = viz.renderSVGElement(huge);
-//             const svg = viz.renderSVGElement(dot);
-//             const render_raw = viz.renderString(dot, {format: "plain"});
-//             document.getElementById("graph").appendChild(svg);
-//             console.log(render_raw);
-//             // document.getElementById("raw").textContent = (render_raw);
-//             console.timeEnd("timer")
-
-//             // process raw
-//             process_raw(render_raw);
-//         })
-// }

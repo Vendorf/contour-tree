@@ -3,7 +3,13 @@
 
 Computes contour tree based on algorithm in [Computing contour trees in all dimensions](https://doi.org/10.1016/S0925-7721(02)00093-7) from Harr et al.
 
-WebGL code adapted from [Cem Yuksel](https://graphics.cs.utah.edu/courses/cs4600/fall2023/)
+_WebGL code adapted from [Cem Yuksel](https://graphics.cs.utah.edu/courses/cs4600/fall2023/)._
+
+The contour tree is displayed in a popup window, so allow popups for the site and reload to allow it to work.
+
+# Overview 
+
+TODO
 
 # Install
 
@@ -21,3 +27,8 @@ WebGL code adapted from [Cem Yuksel](https://graphics.cs.utah.edu/courses/cs4600
 1. `npx vite`
     - Will install `vite` if missing
 2. Don't forget to allow popups for the contour tree window to show up
+
+# GitHub.io
+Hosted on [https://vendorf.github.io/contour-tree/](https://vendorf.github.io/contour-tree/).
+
+Built with `npx vite build` and the `dist` folder is renamed to `docs` to allow GitHub Pages to pick it up automatically.

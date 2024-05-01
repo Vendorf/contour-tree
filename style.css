@@ -77,6 +77,9 @@ input[type=button] {
 	width: 100%;
 	min-width: 9em;
 }
+input[type=file]{
+    width: 100%;
+}
 #canvas {
 	display: block;
 	position: absolute;

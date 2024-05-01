@@ -1070,7 +1070,7 @@ function SetTolerance(param){
 	// Represents from 0 to 0.05
 	// So each step is 0.0005
 	const new_tolerance = param.value * 0.0005;
-	document.getElementById('tolerance-value').innerText = new_tolerance.toFixed( 3 );
+	document.getElementById('tolerance-value').innerText = new_tolerance.toFixed( 4 );
 	meshDrawer.set_tolerance(new_tolerance);
 	DrawScene();
 }
@@ -1209,7 +1209,7 @@ f 2/1/21 6/4/24 7/3/23 1/2/22
 					<div class="control"><input type="button" value="Show Tree"
 						onclick="ShowPopup()"></div>
 					<div class="control"><span id="tolerance-label">Tolerance:</span><span class="value"
-						id="tolerance-value">0.001</span><input id="tolerance-exp" type="range" min="0" max="100"
+						id="tolerance-value">0.0010</span><input id="tolerance-exp" type="range" min="0" max="100"
 						value="2" oninput="SetTolerance(this)" ondblclick="this.value=2;this.oninput()" /></div>
 				</div>
 			</div>
