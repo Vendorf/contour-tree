@@ -9,6 +9,8 @@ The contour tree is displayed in a popup window, so allow popups for the site an
 
 # Overview 
 
+Note the contour tree is only guaranteed to work on simply connected surfaces - that is, any cycle on the surface can be collapsed to a point (IE, there are no holes). Surfaces with holes will give incorrect results in the hole intersects the isocurve of the function. For non-simply connected surfaces, you must use a Reeb graph algorithm.
+
 TODO
 
 # Install
@@ -32,3 +34,4 @@ TODO
 Hosted on [https://vendorf.github.io/contour-tree/](https://vendorf.github.io/contour-tree/).
 
 Built with `npx vite build` and the `dist` folder is renamed to `docs` to allow GitHub Pages to pick it up automatically.
+- Nvm this doesn't work need to fix properly with GitHub Actions

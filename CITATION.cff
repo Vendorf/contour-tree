@@ -1,0 +1,15 @@
+# This CITATION.cff file was generated with cffinit.
+# Visit https://bit.ly/cffinit to generate yours today!
+
+cff-version: 1.2.0
+title: Contour Tree
+message: >-
+  If you use this software, please cite it using the
+  metadata from this file.
+type: software
+authors:
+  - given-names: Victor
+    family-names: Petrov
+    email: victor.petrov@utah.edu
+    affiliation: University of Utah
+repository-code: 'https://github.com/Vendorf/contour-tree'
